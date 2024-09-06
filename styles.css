@@ -1,0 +1,223 @@
+/* Allgemeine Stile */
+body {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Stellt sicher, dass der Body mindestens die Höhe des Viewports hat */
+}
+
+/* Header */
+header {
+    background-color: rgb(255, 255, 255); /* Hintergrundfarbe */
+    padding: 20px;
+    position: relative; /* Für die Positionierung von Navigation und Titel */
+}
+
+header h1 {
+    margin: 0;
+    color: rgb(90, 90, 90);
+    font-family: 'Georgia', serif;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+nav {
+    position: absolute;
+    font-family: 'Georgia', serif;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: rgb(90, 90, 90);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hauptbereich */
+main {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+/* Bild-Styling */
+.header-image {
+    width: 100%;          /* Bildbreite auf 100% des Containers setzen */
+    height: 400px ;
+    position: relative;
+
+}
+
+/* Container für das Bild und den Text */
+.image-container {
+    position: relative; /* Ermöglicht die absolute Positionierung des Textes innerhalb dieses Containers */
+    display: inline-block; /* Damit das Bild den benötigten Platz einnimmt */
+    width: 100%; /* Das Bild nimmt die gesamte Breite des Containers ein */
+    margin-bottom: 20px; /* Abstand zum nachfolgenden Element (Slideshow) */
+    
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: -40px; /* Abstand vom unteren Rand des Containers */
+    left: 0;
+    background-color: rgb(0, 68, 162);
+    color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 10px;
+    font-size: 40px;
+    width: 500px;
+    max-width: 80%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Slideshow-Styling */
+.slideshow-container {
+    position: center;
+    max-width: 800px;
+    margin: auto;
+    justify-content: center;   /* Horizontale Zentrierung */
+    align-items: center; 
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.mySlides img {
+    margin: auto;
+    display: block;
+}
+
+.text {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Positionen für die erste Slideshow (slideshow-1) */
+.slideshow-1 .prev {
+    left: 40px; /* Links außerhalb der Slideshow */
+    border-radius: 3px 0 0 3px;
+    margin-top: 30%;
+}
+
+.slideshow-1 .next {
+    right: 40px; /* Rechts außerhalb der Slideshow */
+    border-radius: 0 3px 3px 0;
+    margin-top: 30%;
+}
+
+/* Positionen für die zweite Slideshow (slideshow-2) */
+.slideshow-2 .prev {
+    left: 50px; /* Weiter links außerhalb der Slideshow */
+    border-radius: 3px 0 0 3px;
+    margin-top: 20%;
+}
+
+.slideshow-2 .next {
+    right: 50px; /* Weiter rechts außerhalb der Slideshow */
+    border-radius: 0 3px 3px 0;
+    margin-top: 20%;
+}
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: black;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    font-family: 'Georgia', serif;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.footer-left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin-left: 200px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 200px;
+}
+
+.footer-Linkedin {
+    font-size: 40px;
+    margin-top: 100px;
+margin-right: 0px;
+margin-left: 20px;
+
+
+}
+
+/* Special Text */
+.special-text {
+    margin-top: 200px;
+    font-size: 18px;
+    text-align: center;
+}
